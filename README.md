@@ -195,4 +195,23 @@ The project was developed using:
 ---
 # Repository Structure
 
-    
+shopify-app-store-analysis
+│
+├── README.md
+├── report.pbix
+│
+├── 📁 data
+│   ├── apps.csv
+│   └── reviews.csv
+│
+└── 📁 screenshots
+    ├── overview_page.png
+    ├── trend_analysis_page.png
+    └── model_view.png
+ ---   
+# Conclusion
+The Shopify App Store analysis provides insight into application performance, customer satisfaction, developer engagement, and review activity.
+
+The analysis found 500 applications, approximately 7,980 reviews, and an average rating of 4.19. While overall customer ratings are strong, the 24.80% developer reply rate indicates an opportunity to increase developer engagement with customer feedback.
+
+The substantial 91.09% review growth rate also demonstrates increasing customer engagement with the Shopify App Store. Monitoring review trends, category activity, ratings, and developer responses can help businesses better understand merchant needs and identify opportunities to improve the customer experience.
