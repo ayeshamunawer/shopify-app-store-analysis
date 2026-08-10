@@ -194,15 +194,18 @@ The project was developed using:
 
 ---
 # Repository Structure
+shopify-app-store-analysis
+│
+├── README.md
+├── report.pbix
+│
+├── data
+│   ├── apps.csv
+│   └── reviews.csv
+│
+└── screenshots
+    ├── overview_page.png
+    ├── trend_analysis_page.png
+    └── model_view.png
 
-```text
-shopify-app-store-analysis/
-├── 
-├── 
-├── data/
-│   ├── 
-│   └── 
-└── screenshots/
-    ├── 
-    ├── 
-    └── 
+    
