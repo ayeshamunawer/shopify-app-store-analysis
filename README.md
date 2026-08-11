@@ -1,48 +1,83 @@
-# 💡 Analyst Memo — Shopify App Store Insights
+# Shopify App Store Analysis
 
-**Dashboard:** Shopify App Store Analysis
+## 📌 Project Overview
 
-**Reporting Period:** 2018–2024
+This project analyzes Shopify App Store applications and customer reviews to understand **customer satisfaction, developer engagement, and changes in review activity over time**.
 
----
-
-## Key Insight
-
-The Shopify App Store analysis includes **500 applications and 7,980 customer reviews**, with an overall average rating of **4.19 out of 5**. Merchant satisfaction is generally strong based on the high average rating; however, developer engagement with customer feedback is relatively limited, with developers replying to approximately **24.80% of reviews**.
-
-Review activity has increased substantially over time. The Overview and Trend Analysis dashboards show a strong upward trend in the number of reviews from 2018 through 2024. The Trend Analysis page shows a **91.09% review growth rate**, approximately **4,000 reviews YTD**, and **365 reviews MTD**, demonstrating continued growth in merchant engagement with app reviews.
-
-Category-level analysis also shows differences in review activity across the marketplace. The category breakdown identifies **SEO** as one of the highest-review categories displayed in the dashboard, indicating strong merchant engagement in this area.
+The analysis was created in Power BI and includes an **Overview** dashboard and a **Trend Analysis** dashboard. Together, these dashboards provide a high-level view of marketplace performance and highlight opportunities to strengthen the customer and developer experience.
 
 ---
 
-## Business Impact
+## 🔎 Key Insight
 
-The high average rating of **4.19** suggests that merchants generally have positive experiences with Shopify applications. Maintaining this level of satisfaction is important for marketplace trust and continued merchant adoption of apps.
+The Shopify App Store analysis includes **500 applications and 7,980 customer reviews**, with an overall average rating of **4.19 out of 5**.
 
-At the same time, the **24.80% developer reply rate** indicates an opportunity to increase developer participation in customer conversations. Responding to reviews can provide developers with opportunities to address concerns, clarify issues, and demonstrate responsiveness to merchants.
+The strong average rating indicates that merchants generally have positive experiences with the applications analyzed. However, only **24.80% of customer reviews received a developer reply**, highlighting a potential opportunity to improve communication between developers and merchants.
 
-The strong increase in review activity over time also provides Shopify with a growing source of merchant feedback. Monitoring review volume, ratings, and category-level activity can help identify areas of strong marketplace engagement and potential opportunities for improvement.
-
----
-
-## Recommendation
-
-Shopify should encourage app developers to respond more consistently to customer reviews, particularly as review activity continues to increase. Improving developer engagement could strengthen relationships between merchants and app developers while creating additional opportunities to address customer concerns.
-
-Shopify should also continue monitoring review activity by category and over time. Categories with high review volume can provide valuable insight into areas where merchants are highly engaged, while changes in review growth can help identify emerging marketplace trends.
-
-Future analysis could also examine whether developer replies are associated with changes in ratings, helpful votes, or long-term review activity.
+Review activity also increased substantially over the reporting period. The analysis shows a **91.09% review growth rate**, with approximately **4,000 reviews YTD** and **365 reviews MTD**. This indicates continued growth in merchant engagement and provides Shopify and app developers with an increasingly valuable source of customer feedback.
 
 ---
 
-# Dashboard Overview
+## 💼 Business Impact
 
-The Power BI report contains two report pages: **Overview** and **Trend Analysis**.
+### Strong Customer Satisfaction
+
+The **4.19 average rating** suggests that overall merchant sentiment toward the applications in the dataset is positive.
+
+Maintaining strong customer satisfaction is important for marketplace trust and can support continued merchant engagement with Shopify applications.
+
+### Opportunity for Greater Developer Engagement
+
+Although customer ratings are strong, the **24.80% developer reply rate** shows that most reviews do not receive a direct response from developers.
+
+Increasing developer engagement with reviews could create more opportunities to:
+
+- Address merchant concerns
+- Clarify questions or issues
+- Demonstrate responsiveness
+- Strengthen relationships with merchants
+
+### Growing Customer Feedback
+
+The **91.09% review growth rate** demonstrates that customer review activity is increasing.
+
+As review activity grows, customer feedback becomes an increasingly valuable source of information for understanding merchant experiences and identifying areas where the App Store experience could be improved.
+
+---
+
+## 💡 Recommendations
+
+### 1. Encourage Developers to Respond to Reviews
+
+Shopify should encourage app developers to respond more consistently to customer reviews.
+
+A higher response rate could improve communication between developers and merchants and provide developers with more opportunities to address concerns directly.
+
+### 2. Continue Monitoring Customer Satisfaction
+
+Shopify should continue monitoring average ratings and review activity to identify changes in merchant sentiment.
+
+Tracking these metrics over time can help identify emerging customer experience trends.
+
+### 3. Monitor Review Activity by Category
+
+Review activity should also be evaluated across app categories.
+
+Understanding which categories generate higher levels of customer engagement can help Shopify and developers identify areas receiving significant merchant attention.
+
+### 4. Use Customer Feedback to Identify Opportunities
+
+As review volume continues to grow, Shopify and developers can use customer feedback to identify recurring concerns, areas of satisfaction, and opportunities to improve applications and the overall App Store experience.
+
+---
+
+# 📊 Dashboard
+
+The Power BI report contains two interactive pages.
 
 ## Overview
 
-The Overview page provides a high-level summary of the Shopify App Store marketplace.
+The **Overview** dashboard provides a high-level summary of Shopify App Store activity.
 
 ### Key Performance Indicators
 
@@ -53,165 +88,40 @@ The Overview page provides a high-level summary of the Shopify App Store marketp
 | Average Rating | 4.19 |
 | Developer Reply % | 24.80% |
 
-### Overview Visuals
-
-The Overview page includes:
-
-- Total applications
-- Total customer reviews
-- Average customer rating
-- Developer reply percentage
-- Review trends by year
-- Review volume by app category
-- App-level review and rating information
-- Category filter
-- Year filter
-- Free-plan filter
-- Page navigation between report pages
+The dashboard allows stakeholders to quickly understand the overall size of the marketplace, customer review activity, satisfaction levels, and developer engagement.
 
 ---
 
 ## Trend Analysis
 
-The Trend Analysis page focuses on changes in review activity over time and applies Power BI time-intelligence concepts.
+The **Trend Analysis** dashboard focuses on changes in review activity over time.
 
-### Key Trend Metrics
+### Key Metrics
 
 | Metric | Result |
 |---|---:|
-| Review Growth % | 91.09% |
+| Review Growth | 91.09% |
 | Reviews YTD | Approximately 4,000 |
 | Reviews MTD | 365 |
 
-The page includes:
-
-- Total reviews by year
-- Reviews from the previous year
-- Review growth percentage
-- Reviews YTD
-- Reviews MTD
-- Year slicer
-- Category slicer
-- Navigation between Overview and Trend Analysis
-
-The trend visuals show that review activity increased substantially between 2018 and 2024.
+The trend analysis helps stakeholders understand how customer engagement with Shopify applications has changed over time.
 
 ---
 
-# Data Sources
+# 📷 Dashboard Preview
 
-The analysis uses two CSV datasets:
+### Overview Dashboard
 
-### apps.csv
+![Overview Dashboard](screenshots/overview_page.png)
 
-Contains information about Shopify applications, including:
+### Trend Analysis Dashboard
 
-- `app_id`
-- `app_name`
-- `developer`
-- `category_name`
-- `launch_date`
-- `has_free_plan`
-- `monthly_price_usd`
-
-### reviews.csv
-
-Contains customer review information, including:
-
-- `review_id`
-- `app_id`
-- `rating`
-- `posted_at`
-- `has_developer_reply`
-- `helpful_count`
+![Trend Analysis Dashboard](screenshots/trend_analysis_page.png)
 
 ---
 
-# Data Cleaning
+# 📚 Additional Documentation
 
-The raw datasets were cleaned using **Power Query** before analysis.
+For technical details about the datasets, data preparation, data model, DAX measures, and project structure, see:
 
-The following transformations were applied:
-
-- Trimmed extra spaces from application names and developer names
-- Replaced missing developer names with `Unknown Developer`
-- Standardized category names using Capitalize Each Word
-- Removed duplicate review records using `review_id`
-- Removed invalid ratings outside the 1–5 range
-- Converted review dates using the appropriate date/locale settings
-- Converted developer reply values from `Yes`/`No` to `1`/`0`
-- Reviewed and corrected column data types
-
----
-
-# Data Model
-
-The Power BI report uses three primary tables:
-
-- `apps`
-- `reviews`
-- `dim_date`
-
-The `apps` table is connected to the `reviews` table using `app_id`.
-
-The `dim_date` table is connected to the `reviews` table using the review date.
-
-This model supports filtering, aggregation, and time-intelligence calculations throughout the report.
-
----
-
-# DAX Measures
-
-Key measures used in the dashboard include:
-
-- Total Apps
-- Total Reviews
-- Average Rating
-- Developer Reply %
-- Reviews Previous Year
-- Review Growth %
-- Reviews YTD
-- Reviews MTD
-
-Time-intelligence calculations use functions including:
-
-- `CALCULATE()`
-- `DATEADD()`
-- `SAMEPERIODLASTYEAR()`
-- `TOTALYTD()`
-- `TOTALMTD()`
-
----
-
-# Tools
-
-The project was developed using:
-
-- Microsoft Power BI
-- Power Query
-- DAX
-- GitHub
-
----
-# Repository Structure
-
-shopify-app-store-analysis
-│
-├── README.md
-├── report.pbix
-│
-├── 📁 data
-│   ├── apps.csv
-│   └── reviews.csv
-│
-└── 📁 screenshots
-    ├── overview_page.png
-    ├── trend_analysis_page.png
-    └── model_view.png
- ---   
-# Conclusion
-The Shopify App Store analysis provides insight into application performance, customer satisfaction, developer engagement, and review activity.
-
-The analysis found 500 applications, approximately 7,980 reviews, and an average rating of 4.19. While overall customer ratings are strong, the 24.80% developer reply rate indicates an opportunity to increase developer engagement with customer feedback.
-
-The substantial 91.09% review growth rate also demonstrates increasing customer engagement with the Shopify App Store. Monitoring review trends, category activity, ratings, and developer responses can help businesses better understand merchant needs and identify opportunities to improve the customer experience.
+**[Technical Documentation](Technical%20Documentation.md)**
